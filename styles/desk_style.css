@@ -1,0 +1,300 @@
+/* start working on nav bar */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    background-color: hsl(36, 100%, 99%);
+    margin-left:12% ;
+    margin-right: 12%;
+    margin-top: 5%;
+    font-family: 'Inter' ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding-left: 35px;
+    font-size:16px;
+    opacity: 0.6;
+    font-family: 'Inter' ;
+}
+
+.menu ul li:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+/* start working on main body */
+.container{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first first second" 
+    "third third third";
+    grid-gap: 25px;
+}
+
+/* working with the first section */
+
+.details{
+    grid-area: first;
+}
+.details img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.information h1{
+    grid-area: a;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 0;
+
+}
+.information p{
+    grid-area: b;
+    margin-top: 10px;
+    color: hsl(236, 13%, 42%);
+    padding-top: 5px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.information div{
+    margin: 0;
+    grid-area: c;
+    
+}
+
+.information button {
+    margin-top: 12% ;
+    background-color: hsl(5, 85%, 63%);
+    padding: 15px 25px 15px 25px;
+    font-size: 18px ;
+    color: white ;
+    border: 0;
+    margin-bottom: 0;
+}
+.information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "a b" "a c";
+}
+
+
+
+/* working with the second section */
+.news{
+    grid-area: second;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+
+.news h2{
+    font-size: 32px;
+    margin-top: 10%;
+    margin-left: 8%;
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+
+}
+
+.news .article{
+    border-bottom: 1px solid gray;
+    margin: 8% 8%;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+}
+
+.news .article:nth-child(4){
+    border:0 ;
+
+}
+.news .title{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.news .description{
+    font-size: 14px;
+    opacity: 0.8;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+/* working with the third section */
+
+
+.features{
+    margin-top: 5%;
+    grid-area: third;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* image and container of  details */
+.pocket{
+    display: flex;
+    flex:  1 1 ;
+}
+
+.feedbacks{
+    padding-left: 12px;
+}
+
+.feedbacks p:nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0.7;
+    margin-top: 0;
+
+}
+
+.feedbacks p:nth-child(3){
+    opacity: 0.7;
+    font-size: 14px;
+
+}
+
+.feedbacks h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+
+
+.features img{
+    object-fit: contain;
+    height: 100% ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .first {
+    height: 500px;
+    border:1px solid  green;
+    grid-area: first;
+
+}
+
+.second {
+    height: 500px;
+    border:1px solid red;
+    grid-area: second;
+}
+
+.third {
+    height: 200px;
+    border:1px solid blue;
+    grid-area: third;
+}
+
+
+.container {
+    margin-top: 55px;
+
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+        "first first second"
+        "third third third" ;
+    grid-gap: 15px ;
+} */
+
+
+
