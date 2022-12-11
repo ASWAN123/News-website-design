@@ -1,5 +1,97 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 375px) {
     body {
-      background-color: red;
+        margin: 3%;
     }
-  }
+    .humberger{
+        display: block;
+    }
+    /* button transform */
+    .humberger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .humberger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+
+    .humberger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* menu transform */
+    .nav-menu{
+        display: none;
+    }
+
+
+    .nav-menu.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: fixed;
+        padding: 10px 20px;
+        top: -3%;
+        right:-1% ;
+        height: 100vh;
+        width: 60%;
+        transition: 0.3s;
+        background-color: white;
+        opacity: 1;
+    }
+
+    .nav-menu.active .nav-item{
+        padding-right: 10px ;
+        color: black ;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .humberger.active span{
+        background-color: black;
+    }
+
+
+
+    /* start with the container styling  */
+    #mobil_image{
+        display: block;
+    }
+    #desk_image{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .information h1{
+        margin-top: 5%;
+    }
+
+    .news{
+        margin-top:13%;
+    }
+
+    .features{
+        margin-top: 13%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pocket img{
+        height: 180px;
+        width: 150px;
+    }
+
+    .pocket {
+        margin-bottom: 5%;
+    }
+
+}
